@@ -50,7 +50,12 @@ request.onload = function() {
             card.appendChild(p);
         });
     } else {
-        console.log('error');
+        // console.log('error');
+
+        // Change error to use marquee for fun
+        const errorMessage = document.createElement('marquee');
+        errorMessage.textContent = `It's not workinggg!`;
+        app.appendChild(errorMessage);
     }
         
 };
